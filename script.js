@@ -1,11 +1,14 @@
 //1
 function removeFirstAndLast(str) {
     var arr = str.split(",")
+    if (arr.length<3) {
+        return null
+    }
     arr = arr.slice(1,arr.length-1)
     return arr.join(' ')
 }
 
-console.log(removeFirstAndLast("1,2,3,4,5"))
+console.log(removeFirstAndLast("1,2,3"))
 
 //2
 function isEveryItemArray(arr){
